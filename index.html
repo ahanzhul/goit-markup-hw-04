@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,32 +17,24 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header class="page-header">
       <div class="container header-container">
         <nav class="page-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-span">Studio</span></a
-          >
+          <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-link">Studio</a></li>
             <li><a href="" class="nav-link">Portfolio</a></li>
             <li><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="contacts">
           <ul class="contacts-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact-link"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
             </li>
-            <li>
-              <a href="tel:+110001111111" class="contact-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
+            <li><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
       </div>
@@ -51,9 +44,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>
-            Order Service
-          </button>
+          <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
 
@@ -62,31 +53,51 @@
           <h2 class="section-title visually-hidden">Features</h2>
           <ul class="features-list">
             <li class="card">
+              <div class="feature-icon">
+                <svg class="icon" width="64" height="64" aria-hidden="true">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Strategy</h3>
               <p class="text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Our goal is to identify the business problem to walk away with the perfect and
+                creative solution.
               </p>
             </li>
             <li class="card">
+              <div class="feature-icon">
+                <svg class="icon" width="64" height="64" aria-hidden="true">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Punctuality</h3>
               <p class="text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
+                Bring the key message to the brand's audience for the best price within the shortest
+                possible time.
               </p>
             </li>
             <li class="card">
+              <div class="feature-icon">
+                <svg class="icon" width="64" height="64" aria-hidden="true">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Diligence</h3>
               <p class="text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital growth opportunities
+                and minimize risk.
               </p>
             </li>
             <li class="card">
+              <div class="feature-icon">
+                <svg class="icon" width="64" height="64" aria-hidden="true">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Technologies</h3>
               <p class="text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a deep passion for
+                problem-solving.
               </p>
             </li>
           </ul>
@@ -181,31 +192,28 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container footer-container">
-        <div class="footer-left">
-          <a href="./index.html" class="logo">Web<span class="footer-span">Studio</span></a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with digital
-            marketing & growth solutions.
-          </p>
-        </div>
+      <div class="container">
+        <a href="./index.html" class="logo">Web<span class="footer-span">Studio</span></a>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with digital marketing & growth
+          solutions.
+        </p>
 
-        <div class="footer-form-wrapper">
-          <p class="footer-form-text">Subscribe</p>
+        <div class="footer-formbox">
+          <p class="footer-caption">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label">
               <input
+                class="footer-input"
                 type="email"
                 name="user-email"
-                class="footer-input"
                 placeholder="E-mail"
-                required
               />
             </label>
-            <button type="submit" class="footer-button">
+            <button class="footer-button" type="submit">
               Subscribe
-              <svg class="footer-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
+              <svg class="footer-icon" width="24" height="24" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </button>
           </form>
@@ -213,44 +221,98 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-          <svg width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
+    <div class="backdrop">
+      <div class="modal-window">
+        <button class="modal-close" type="button">
+          <svg class="modal-closeicon" width="8" height="8" aria-hidden="true">
+            <use href="./images/symbol-defs.svg#icon-clock"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+
         <form class="modal-form">
-          <label class="modal-label">
-            Name
-            <input type="text" name="user-name" class="modal-input" required />
-          </label>
-          <label class="modal-label">
-            Phone
-            <input type="tel" name="user-phone" class="modal-input" required />
-          </label>
-          <label class="modal-label">
-            Email
-            <input type="email" name="user-email" class="modal-input" required />
-          </label>
-          <label class="modal-label comment-label">
-            Comment
+          <div class="field">
+            <label class="field-label" for="user-name">Name</label>
+            <div class="field-wrap">
+              <input
+                class="field-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                placeholder=""
+              />
+              <svg class="input-icon" width="18" height="24" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="user-phone">Phone</label>
+            <div class="field-wrap">
+              <input
+                class="field-input"
+                id="user-phone"
+                name="user-phone"
+                type="text"
+                placeholder=""
+              />
+              <svg class="input-icon" width="18" height="24" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="user-email-modal">Email</label>
+            <div class="field-wrap">
+              <input
+                class="field-input"
+                id="user-email-modal"
+                name="user-email"
+                type="email"
+                placeholder=""
+              />
+              <svg class="input-icon" width="18" height="24" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="field-area">
+            <label class="field-label" for="user-comment">Comment</label>
             <textarea
+              class="area-input"
+              id="user-comment"
               name="user-comment"
-              class="modal-textarea"
-              placeholder="Type your message"
+              placeholder="Text input"
             ></textarea>
-          </label>
-          <label class="modal-checkbox">
-            <input type="checkbox" name="policy" required />
-            <span>I accept the terms and conditions</span>
-          </label>
-          <button type="submit" class="modal-submit">Send</button>
+          </div>
+
+          <div class="check-wrap">
+            <input
+              class="check-input visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="check-label" for="user-privacy">
+              <span class="check-box">
+                <svg class="check-icon" width="10" height="8" aria-hidden="true">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
-
-    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
