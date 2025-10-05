@@ -149,15 +149,17 @@ img { display: block; max-width: 100%; height: auto; }
 .footer-text { line-height: 1.5; letter-spacing: 0.02em; color: var(--footer-text-color); max-width: 264px; }
 
 .footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
   margin-bottom: 16px;
-  font-weight: 500; font-size: 16px; line-height: 1.5; letter-spacing: 0.02em; color: #ffffff;
 }
 
+
 .footer-social-list { display: flex; gap: 16px; }
-/* Edit footer*/
-.footer-social > .footer-social-text {
-  margin-bottom: 16px !important;
-}
+
 
 
 .footer-social .social-link:hover,
