@@ -154,6 +154,11 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .footer-social-list { display: flex; gap: 16px; }
+/* Edit footer*/
+.footer-social > .footer-social-text {
+  margin-bottom: 16px !important;
+}
+
 
 .footer-social .social-link:hover,
 .footer-social .social-link:focus,
