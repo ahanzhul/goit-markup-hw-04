@@ -9,6 +9,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #fff
 ul { list-style-type: none; margin: 0; padding: 0; }
 a { text-decoration: none; }
 button { cursor: pointer; }
+h1, h2, h3, h4, p {margin: 0}
 img { display: block; max-width: 100%; height: auto; }
 .container { width: 1158px; margin: 0 auto; padding: 0 15px; }
 
@@ -37,6 +38,7 @@ img { display: block; max-width: 100%; height: auto; }
 .footer-span { color: #f4f4fd; }
 
 .nav-link {
+  display:block;
   position: relative;
   font-weight: 500; font-size: 16px; line-height: 1.5; letter-spacing: 0.02em;
   color: #2e2f42; padding: 24px 0;
@@ -84,7 +86,7 @@ img { display: block; max-width: 100%; height: auto; }
   text-transform: capitalize; color: #2e2f42; margin-bottom: 72px;
 }
 .subtitle { font-weight: 500; font-size: 20px; line-height: 1.2; letter-spacing: 0.02em; color: #2e2f42; }
-.text { font-size: 16px; line-height: 1.5; letter-spacing: 0.02em; color: #434455; }
+.text { font-size: 16px; line-height: 1.5; letter-spacing: 0.01em; color: #434455; }
 
 .features-list { display: flex; gap: 24px; }
 .features-list .card { flex-basis: calc((100% - 72px) / 4); }
@@ -146,13 +148,12 @@ img { display: block; max-width: 100%; height: auto; }
 .page-footer { background-color: #2e2f42; padding: 100px 0; }
 .footer-wrap { display: flex; align-items: baseline; }
 .footer-brand { margin-right: 120px; }
-.page-footer .logo { display: inline-block; margin-bottom: 16px; }
+.page-footer .logo { display: inline-block; margin-bottom: 16px; margin-right: 0;}
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 .footer-social-text {
